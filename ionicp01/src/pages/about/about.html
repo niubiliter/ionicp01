@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      用户登录
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+
+  <ion-item>
+    <ion-label floating>账户</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="user.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>密码</ion-label>
+    <ion-input type="password" value="" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+</ion-list>
+	<button ion-button full color="Secondary" (click)="login()">登录</button>
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<div class="textAlignRight marginTop10">
+					<button ion-button outline small (click)="register()">没有账号？注册一个</button>
+       
+          
+          
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-list>
+ 
+
+  <ion-item>
+  <ion-label>Start Time</ion-label>
+  <ion-datetime class="marginTop10"></ion-datetime>
+</ion-item>
+</ion-list>
+	
+  
+</ion-content>
